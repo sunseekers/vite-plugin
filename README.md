@@ -52,7 +52,7 @@ export default {
 import vm from 'vitual-modele'
 console.log('【这里是我自己写的一个vite插件的模板】',vm)
 ```
-
+[参考例子](https://github.com/sunseekers/vite-plugin/blob/master/vite-plugin-example.js)
 ### vite 通用的钩子
 #### 只有在服务器启动时调用一次（可以得到rollup创建的一些选项
 options： 替换或者操纵rollup ，选项 build的时候有用，别的时候是一个空对象，可以影响打包的行为
@@ -68,7 +68,7 @@ transform： 可用于转化已加载的模块内容
 
 上面那个例子就是用到了这里的几个生命钩子函数
 
-[参考例子]()
+[参考例子](https://github.com/sunseekers/vite-plugin/blob/master/vite-plugin-example.js)
 #### 只有在服务器关闭时调用一次
 buildEnd
 
@@ -84,14 +84,14 @@ configureServer：用于配置vite 应用程序dev server
 transformIndexHtml:用于转换宿主页
 
 handleHotUpdate:自定义HMR更新时调用
-[参考例子]()
+[参考例子](https://github.com/sunseekers/vite-plugin/blob/master/vite-plugin-mock.js)
 
 ### vite 钩子执行的顺序
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gt1bd5tnpgj30up0ec75j.jpg">
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gt1bg72pdgj30tw0h3wfo.jpg">
 
-[参考例子]()
+[参考例子](https://github.com/sunseekers/vite-plugin/blob/master/vite-plugin-life.js)
 
 ## 总结
 主要是看了[Young村长 的b站视频](https://space.bilibili.com/480140591/video?keyword=vite)，欢迎大家去看，写的是真的很不错。
