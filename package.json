@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "vite": "^2.1.5"
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>如何写 vite 插件</title>
+</head>
+<body>
+  <div id="app">
+    <h1>分分钟入门vite插件门槛</h1>
+    <button onclick="getApi()">点击请求本地接口</button>
+  </div>
+</body>
+<script type="module" src="./index.js"></script>
+<script>
+  async function getApi(){
+    const res = await fetch('/api/users')
+    const data = await res.json()
+    
+    console.log('【通过vite插件写的一个接口请求】',data);
+  }
+</script>
+</html>
